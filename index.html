@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" >
+<style>
+		
+				.bar
+{
+overflow:hidden;
+background-color:grey;
+
+}
+.bar a {
+ 
+ float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.bar a:hover{
+background-color: yellow;
+color:black;
+}
+.bar a.active{
+background-color:red;
+color:green;
+
+}
+.bar input[type=text]{
+float:right;
+padding:6px;
+border:black;
+margin-top:8px;
+margin-right:17px;
+font-size:18px;
+}
+@media screen and (max-width: 800px) {
+  .bar a, .bar input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .bar input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+h1{
+font-size:50px;
+text-align:center;
+border:1px solid red;
+background-color:red;
+
+}
+h2{
+font-size:30px;
+color:black;
+
+}
+.im {
+display:block;
+margin-right:auto;
+margin-left:auto;
+width:55%;
+
+}
+.im button{
+color:white;
+border:5px solid pink;
+display:block;
+margin-right:auto;
+margin-left:auto;
+background-color:crimson;
+
+}
+.fire {
+font-family:Fantasy;
+text-align:center;
+font-size:40px;
+color:white;
+background-repeat:no-repeat;
+}
+.water{
+font-family:Fantasy;
+text-align:center;
+font-size:30px;
+color:white;
+}
+
+.Lion{
+
+text-align:center;
+padding:50px;
+background-color:lightblue;
+font-size:30px;
+color:black;
+font-family:Monospace;
+
+
+
+}
+
+footer{
+
+padding:70px;
+text-align:center;
+margin-top:20px;
+background-color:black;
+text-color:white;
+
+}
+.myslides{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding:10px;
+  background-color:;
+  
+}
+section {
+    background-color:white;
+}
+.info p{
+    background-color:green;
+}
+
+
+</style>
+<body>
+<h1 style="./color:white">Tasty Food<img src="food5.png" alt="Food image" width="60px" height="50px">
+</h1>
+
+
+<div class= "Bar">
+				
+				<a href="#Home" class= "bar-button bar-item">HOME</a>
+				<a href="#About" class="bar- button bar-item">ABOUT</a>
+				<a href="contact.html" class="bar-button bar-item">CONTACT US</a>
+			<input type="text" placeholder="Search" >
+</div>
+<hr>
+<section align="center" style="background-color: azure">
+				<img class="myslides" src="food1.jpeg" width="70%" height="40%">
+				<img class="myslides" src="food2.jpeg" width="70%" height="40%">
+				<img class="myslides" src="food3.jpeg" width="70%" height="40%">
+				<img class="myslides" src="food8.jpeg" width="70%" height="40%">
+			
+				
+</section>
+<section style="background-color:orange">
+				<h2 style="text-align:center">  </h2>
+				<div class="im">
+				<img  src="food4.png"  height="35%">
+				<br><br>
+				<button type="button"><h2>PLACE ORDER</h2>  </button> 
+				
+				</div>
+				</section>
+				<section style="background-image:url(bg.jpeg)">
+		<h3>		<p class="fire"> <i>
+								We are here to make your day more yummy and fantastic
+			</i>	</p></h3>
+			
+				<p class="water">
+								We know What you love!.We are here to serve to the most delicious food.
+								
+				</p>
+				
+												<br> <br>
+												
+						
+				</div>	
+				
+				
+					
+</section>
+
+<div class="Lion" >
+				<artical class="he-man">
+							
+								<img class="corn" src="co1.jpeg" alt="naruto uzamaki" width="510px">
+								<p> FOUNDER: NARUTO UZUMAKI</p>
+				</artical>
+				<artical class="he-man">
+								<img class="corn" src="co2.jpeg" alt="Goku"width="510px" >
+								<p> CO-FOUNDER: GOKU</p>					
+				</artical class="he-man">
+				<img class="corn" src="co3.jpeg" alt="Monkey d luffy"width="510px">
+				<p styel="font-size:110px">CO-FOUNDER : MONKEY D LUFFY</p>
+				
+				
+								
+				</artical>
+				<section class="info">
+				   
+												   
+												</div>
+					
+				</section>
+				
+				
+				<br><br>
+</div>
+<footer>
+				<a style="color:white" href="facebook.com">Facebook</a>
+				<a style="color:white"href="instagram.com">Instagram</a>
+				<a style="color:white" href="https://mobile.twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">Twitter</a>
+</footer>
+
+
+
+
+
+
+
+<script>
+				var mybite= 0;
+				pikachu();
+				function pikachu(){
+				var i;
+				var x=
+				document.getElementsByClassName("myslides");
+				for (i=0; i < x.length; i++)
+				{
+				x[i].style.display="none";
+				}
+				mybite++;
+				if(mybite > x.length){
+				mybite= 1 ;
+				}
+				x[mybite - 1].style.display="block";
+				setTimeout(pikachu,3000);
+
+				
+				}
+</script>
+
+</body>
+</html>
